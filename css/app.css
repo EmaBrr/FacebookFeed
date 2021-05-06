@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -96,6 +97,7 @@ h6 {
   grid-gap: 80px;
   background-color: #fff;
   color: #444;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header .search {
@@ -123,4 +125,96 @@ h6 {
   color: #949494;
   padding: 10px;
   font-size: 14px;
+}
+
+.header .public__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .public__info .home__button {
+  width: calc(85% / 5);
+  text-align: center;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border-bottom: 2.5px solid #3737a7;
+}
+
+.header .public__info .home__button i {
+  font-size: 25px;
+  color: #3737a7;
+}
+
+.header .public__info .menu__button {
+  width: calc(85% / 5);
+  text-align: center;
+  border-radius: 8px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.header .public__info .menu__button:hover {
+  background-color: #ececec;
+}
+
+.header .public__info .menu__button i {
+  font-size: 25px;
+  color: dimgray;
+}
+
+.header .personal__info {
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+}
+
+.header .personal__info .user {
+  width: 20%;
+  height: 63%;
+  display: flex;
+  align-items: center;
+}
+
+.header .personal__info .user .user__img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background-image: url(../img/user.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header .personal__info .user p {
+  padding-left: 20px;
+  font-weight: 900;
+}
+
+.header .personal__info .menu__btn {
+  width: calc(35% / 4);
+  text-align: center;
+  border-radius: 8px;
+  height: 63%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ececec;
+  margin: 10px;
+}
+
+.header .personal__info .menu__btn:hover {
+  background-color: #dbdbdb;
+}
+
+.header .personal__info .menu__btn i {
+  color: dimgray;
+  font-size: 18px;
 }
