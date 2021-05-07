@@ -93,8 +93,8 @@ h6 {
   background-color: white;
   box-shadow: 3px 3px 10px rgba(167, 160, 160, 0.4);
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
-  grid-gap: 80px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 180px;
   background-color: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
@@ -112,7 +112,7 @@ h6 {
 }
 
 .header .search input {
-  width: 50%;
+  width: 220px;
   height: 40px;
   border-radius: 30px;
   background-color: #ececec;
@@ -172,19 +172,24 @@ h6 {
 .header .personal__info {
   display: flex;
   align-items: center;
-  padding-left: 20%;
 }
 
 .header .personal__info .user {
-  width: 20%;
-  height: 63%;
+  height: 45px;
   display: flex;
   align-items: center;
+  border-radius: 50px;
+  padding: 0px 10px;
+}
+
+.header .personal__info .user:hover {
+  background-color: #ececec;
 }
 
 .header .personal__info .user .user__img {
-  width: 40px;
-  height: 40px;
+  margin-left: 2px;
+  width: 30px;
+  height: 30px;
   display: inline-block;
   border-radius: 50%;
   background-image: url(../img/user.jpg);
@@ -193,21 +198,21 @@ h6 {
 }
 
 .header .personal__info .user p {
-  padding-left: 20px;
+  padding-left: 10px;
   font-weight: 900;
 }
 
 .header .personal__info .menu__btn {
-  width: calc(35% / 4);
+  width: 45px;
   text-align: center;
   border-radius: 8px;
-  height: 63%;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background-color: #ececec;
-  margin: 10px;
+  margin: 3px;
 }
 
 .header .personal__info .menu__btn:hover {
