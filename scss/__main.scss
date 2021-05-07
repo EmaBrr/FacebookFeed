@@ -240,3 +240,31 @@
     }
   }
 }
+
+.middle__part {
+  width: 100%;
+  overflow: scroll;
+  display: inline-block;
+  padding: 20px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid red;
+    margin-top: 20px;
+    &:first-of-type{
+      margin-top: 30px;
+    }
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.righ__part {
+  border: 1px solid black;
+}

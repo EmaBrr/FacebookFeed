@@ -368,3 +368,35 @@ h6 {
 .body__wrapper .left__part .user__shortcuts .item__more p {
   padding-left: 10px;
 }
+
+.middle__part {
+  width: 100%;
+  overflow: scroll;
+  display: inline-block;
+  padding: 20px;
+}
+
+.middle__part::-webkit-scrollbar {
+  display: none;
+}
+
+.middle__part .card {
+  width: 95%;
+  margin-left: 2.5%;
+  height: 300px;
+  border-radius: 15px;
+  border: 1px solid red;
+  margin-top: 20px;
+}
+
+.middle__part .card:first-of-type {
+  margin-top: 30px;
+}
+
+.middle__part .card:last-of-type {
+  margin-bottom: 30px;
+}
+
+.righ__part {
+  border: 1px solid black;
+}
