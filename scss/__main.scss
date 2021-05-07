@@ -132,13 +132,14 @@
       display: inline-block;
       width: 100%;
       padding: 10px;
+      border-bottom: 2px solid rgb(219, 219, 219);
       .user {
         padding: 10px;
         display: flex;
         align-items: center;
         border-radius: 15px;
         &:hover {
-            background-color: rgb(236, 236, 236);;
+          background-color: rgb(236, 236, 236);
         }
         .user__img {
           width: 30px;
@@ -160,7 +161,7 @@
         align-items: center;
         border-radius: 15px;
         &:hover {
-            background-color: rgb(236, 236, 236);;
+          background-color: rgb(236, 236, 236);
         }
         i {
           margin-left: 2px;
@@ -168,7 +169,7 @@
           color: rgb(55, 55, 167);
         }
         p {
-            padding-left: 10px;
+          padding-left: 10px;
         }
       }
       .item__more {
@@ -176,11 +177,65 @@
         display: flex;
         align-items: center;
         border-radius: 15px;
+        &:hover {
+          background-color: rgb(236, 236, 236);
+        }
         i {
-        
+          margin-left: 2px;
+          font-size: 30px;
+          color: rgb(55, 55, 167);
+          padding: 0px 5px;
+
+        }
+        p {
+          padding-left: 10px;
+        }
       }
-      p{
-          
+    }
+    .user__shortcuts {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      h3 {
+        font-size: 18px;
+        color: rgb(133, 133, 133);
+        padding: 10px;
+      }
+      .item {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        &:hover {
+          background-color: rgb(236, 236, 236);
+        }
+        i {
+          margin-left: 2px;
+          font-size: 30px;
+          color: rgb(55, 55, 167);
+        }
+        p {
+          padding-left: 10px;
+        }
+      }
+      .item__more {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        &:hover {
+          background-color: rgb(236, 236, 236);
+        }
+        i {
+          margin-left: 2px;
+          font-size: 30px;
+          color: rgb(55, 55, 167);
+          padding: 0px 5px;
+
+        }
+        p {
+          padding-left: 10px;
+        }
       }
     }
   }

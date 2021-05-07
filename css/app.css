@@ -242,6 +242,7 @@ h6 {
   display: inline-block;
   width: 100%;
   padding: 10px;
+  border-bottom: 2px solid #dbdbdb;
 }
 
 .body__wrapper .left__part .user__groups .user {
@@ -296,4 +297,74 @@ h6 {
   display: flex;
   align-items: center;
   border-radius: 15px;
+}
+
+.body__wrapper .left__part .user__groups .item__more:hover {
+  background-color: #ececec;
+}
+
+.body__wrapper .left__part .user__groups .item__more i {
+  margin-left: 2px;
+  font-size: 30px;
+  color: #3737a7;
+  padding: 0px 5px;
+}
+
+.body__wrapper .left__part .user__groups .item__more p {
+  padding-left: 10px;
+}
+
+.body__wrapper .left__part .user__shortcuts {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+.body__wrapper .left__part .user__shortcuts h3 {
+  font-size: 18px;
+  color: #858585;
+  padding: 10px;
+}
+
+.body__wrapper .left__part .user__shortcuts .item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.body__wrapper .left__part .user__shortcuts .item:hover {
+  background-color: #ececec;
+}
+
+.body__wrapper .left__part .user__shortcuts .item i {
+  margin-left: 2px;
+  font-size: 30px;
+  color: #3737a7;
+}
+
+.body__wrapper .left__part .user__shortcuts .item p {
+  padding-left: 10px;
+}
+
+.body__wrapper .left__part .user__shortcuts .item__more {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.body__wrapper .left__part .user__shortcuts .item__more:hover {
+  background-color: #ececec;
+}
+
+.body__wrapper .left__part .user__shortcuts .item__more i {
+  margin-left: 2px;
+  font-size: 30px;
+  color: #3737a7;
+  padding: 0px 5px;
+}
+
+.body__wrapper .left__part .user__shortcuts .item__more p {
+  padding-left: 10px;
 }
