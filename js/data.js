@@ -6,15 +6,15 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 0,
             lytis: 'Vyras',
-            avataras: '',
+            avataras: null,
             nuoroda: '#'
         },
-        laikas: 1583832433393,
+        laikas: 1621005739,
         pranesimas: {
-            tekstas: 'Sveiki, as esu Tomas.',
+            tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi',
             spalva: '',
             paveiksliukai: [
-
+                'family1.jpg'
             ]
         }
     },
@@ -24,12 +24,12 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 20,
             lytis: 'Moteris',
-            avataras: '',
+            avataras: 'user2.png',
             nuoroda: '#',
         },
         laikas: 1583832433393,
         pranesimas: {
-            tekstas: 'Neturiu komentaru....',
+            tekstas: 'Lorem',
             spalva: '',
             paveiksliukai: [
 
@@ -42,7 +42,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 27,
             lytis: 'Vyras',
-            avataras: '2.png',
+            avataras: 'user3.png',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -50,7 +50,9 @@ const feed = [{
             tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi',
             spalva: '',
             paveiksliukai: [
-
+                'nature1.jpg',
+                'nature2.jpg',
+                'nature3.jpeg'
             ]
         }
     },
@@ -60,7 +62,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: '3.png',
+            avataras: 'user4.png',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -78,7 +80,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'avataras.png',
+            avataras: null,
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -96,7 +98,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'avataras.png',
+            avataras: 'user5.png',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -114,7 +116,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'avataras.png',
+            avataras: 'user2.png',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -122,8 +124,8 @@ const feed = [{
             tekstas: 'Labas',
             spalva: 'red',
             paveiksliukai: [
-                '1.png',
-                '2.png',
+                'architecture1.jpg',
+                'architecture2.jpg'
             ]
         }
     },
@@ -133,7 +135,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'avataras.png',
+            avataras: 'user1.png',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -141,7 +143,7 @@ const feed = [{
             tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi . Ex earum tenetur  . Ex earum tenetur odit nemo id architecto laborum iure erro',
             spalva: '',
             paveiksliukai: [
-                '1.png',
+                'animal1.jpg'
             ]
         }
     },
@@ -151,7 +153,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'avataras.png',
+            avataras: 'user2.png',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -159,9 +161,7 @@ const feed = [{
             tekstas: 'LabasLorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi, Ex earum tenetur odit nemo id architecto laborum iure erro',
             spalva: '',
             paveiksliukai: [
-                '1.png',
-                '2.png',
-                '3.png',
+
             ]
         }
     },
@@ -171,7 +171,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'avataras.png',
+            avataras: 'user3.png',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -179,10 +179,7 @@ const feed = [{
             tekstas: 'LabasLorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum ',
             spalva: 'orange',
             paveiksliukai: [
-                '1.png',
-                '2.png',
-                '3.png',
-                '4.png',
+                'family1.jpg'
             ]
         }
     },
@@ -192,7 +189,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'avataras.png',
+            avataras: null,
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -200,28 +197,10 @@ const feed = [{
             tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi',
             spalva: '',
             paveiksliukai: [
-                '1.png',
-                '2.png',
-                '3.png',
-                '4.png',
-                '5.png',
-                '6.png',
+
             ]
         }
     },
 
 ]
 
-
-// for (let object of feed) {
-//     console.log(object);
-// }
-
-// console.log('-------------');
-// console.log(feed);
-
-// let amzius = feed[1].autorius.amzius;
-
-// let result1 = feed.find(function(item, index, array) {
-//     return item.autorius.amzius === 10; // grazina tik pirma kuris TRUE
-// });

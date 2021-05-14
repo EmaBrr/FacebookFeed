@@ -301,8 +301,20 @@
     }
     .card__content {
       width: 100%;
-      padding: 20px;
+      padding: 10px 30px;
       display: inline-block;
+      .content{
+        width: 100%;  
+        padding: 0px 0px 15px 0px;      
+      }
+      .galery {
+        width: 100%;
+        padding: 5px 0px;
+        display: inline-block;
+        img{
+            width: 100%;
+        }
+      }
     }
     .card__footer {
       padding: 20px;
