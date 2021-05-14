@@ -250,7 +250,6 @@
   .card {
     width: 95%;
     margin-left: 2.5%;
-    // height: 300px;
     border-radius: 15px;
     margin-top: 20px;
     background-color: white;
@@ -286,13 +285,13 @@
         }
       }
       .more {
-      border-radius: 50%;
-      height: 50px;
-      width: 50px;
-      text-align: center;
-      &:hover {
-        background-color: rgb(236, 236, 236);
-      }
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        &:hover {
+          background-color: rgb(236, 236, 236);
+        }
         p {
           font-size: 25px;
           margin-top: 4px;
@@ -303,27 +302,28 @@
     .card__content {
       width: 100%;
       padding: 20px;
+      display: inline-block;
     }
     .card__footer {
       padding: 20px;
+      width: 100%;
       .card__footer1 {
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         .like__button {
-          width: 100%;
           border-bottom: 1px solid black;
           border-top: 1px solid black;
           text-align: center;
           button {
             font-weight: 900;
             padding: 8px;
+            width: 95%;
             background-color: white;
-            width: 250px;
             border-radius: 5px;
             margin: 5px;
             &:hover {
-              background-color:rgb(236, 236, 236);
+              background-color: rgb(236, 236, 236);
             }
             i {
               font-size: 15px;
@@ -335,7 +335,8 @@
       .card__footer2 {
         display: grid;
         align-items: center;
-        grid-template-columns: 0.3fr 3fr 1fr;
+        grid-template-columns: 0.3fr 3fr 0.9fr;
+        padding: 20px;
         img {
           width: 30px;
           height: 30px;
@@ -347,7 +348,22 @@
         textarea {
           width: 100%;
           height: 30px;
-
+          width: 100%;
+          resize: none;
+          border-radius: 15px;
+          background-color: rgb(236, 236, 236);
+          padding: 5px;
+        }
+        .emoji__row {
+          text-align: center;
+          i {
+            padding: 5px;
+            font-size: 20px;
+            &:hover {
+              background-color: rgb(236, 236, 236);
+              border-radius: 50%;
+            }
+          }
         }
       }
     }

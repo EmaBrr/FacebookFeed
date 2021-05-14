@@ -444,10 +444,12 @@ h6 {
 .middle__part .card .card__content {
   width: 100%;
   padding: 20px;
+  display: inline-block;
 }
 
 .middle__part .card .card__footer {
   padding: 20px;
+  width: 100%;
 }
 
 .middle__part .card .card__footer .card__footer1 {
@@ -457,7 +459,6 @@ h6 {
 }
 
 .middle__part .card .card__footer .card__footer1 .like__button {
-  width: 100%;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   text-align: center;
@@ -466,8 +467,8 @@ h6 {
 .middle__part .card .card__footer .card__footer1 .like__button button {
   font-weight: 900;
   padding: 8px;
+  width: 95%;
   background-color: white;
-  width: 250px;
   border-radius: 5px;
   margin: 5px;
 }
@@ -484,7 +485,8 @@ h6 {
 .middle__part .card .card__footer .card__footer2 {
   display: grid;
   align-items: center;
-  grid-template-columns: 0.3fr 3fr 1fr;
+  grid-template-columns: 0.3fr 3fr 0.9fr;
+  padding: 20px;
 }
 
 .middle__part .card .card__footer .card__footer2 img {
@@ -499,6 +501,25 @@ h6 {
 .middle__part .card .card__footer .card__footer2 textarea {
   width: 100%;
   height: 30px;
+  width: 100%;
+  resize: none;
+  border-radius: 15px;
+  background-color: #ececec;
+  padding: 5px;
+}
+
+.middle__part .card .card__footer .card__footer2 .emoji__row {
+  text-align: center;
+}
+
+.middle__part .card .card__footer .card__footer2 .emoji__row i {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.middle__part .card .card__footer .card__footer2 .emoji__row i:hover {
+  background-color: #ececec;
+  border-radius: 50%;
 }
 
 .righ__part {
