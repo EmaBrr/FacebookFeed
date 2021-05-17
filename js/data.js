@@ -24,7 +24,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 20,
             lytis: 'Moteris',
-            avataras: 'user2.png',
+            avataras: 'user2.jpg',
             nuoroda: '#',
         },
         laikas: 1621232860020,
@@ -42,7 +42,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 27,
             lytis: 'Vyras',
-            avataras: 'user3.png',
+            avataras: 'user3.jpg',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -52,7 +52,7 @@ const feed = [{
             paveiksliukai: [
                 'nature1.jpg',
                 'nature2.jpg',
-                'nature3.jpeg'
+                'nature3.jpg'
             ]
         }
     },
@@ -62,7 +62,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'user4.png',
+            avataras: 'user4.jpg',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -98,7 +98,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'user5.png',
+            avataras: 'user5.jpg',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -116,7 +116,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'user2.png',
+            avataras: 'user2.jpg',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -125,7 +125,7 @@ const feed = [{
             spalva: 'red',
             paveiksliukai: [
                 'architecture1.jpg',
-                'architecture2.jpg'
+                'architecture2.jpeg'
             ]
         }
     },
@@ -153,7 +153,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'user2.png',
+            avataras: 'user2.jpg',
             nuoroda: '#',
         },
         laikas: 1583832434388,
@@ -171,7 +171,7 @@ const feed = [{
             pavarde: 'Pavardenis',
             amzius: 50,
             lytis: 'Vyras',
-            avataras: 'user3.png',
+            avataras: 'user3.jpg',
             nuoroda: '#',
         },
         laikas: 1583832434388,
