@@ -9,7 +9,7 @@ const feed = [{
             avataras: null,
             nuoroda: '#'
         },
-        laikas: 1621005739,
+        laikas: 1621242870055,
         pranesimas: {
             tekstas: 'Lorem ipsum dolor',
             spalva: '',
@@ -27,7 +27,7 @@ const feed = [{
             avataras: 'user2.png',
             nuoroda: '#',
         },
-        laikas: 1583832433393,
+        laikas: 1621232860020,
         pranesimas: {
             tekstas: 'Lorem',
             spalva: '',

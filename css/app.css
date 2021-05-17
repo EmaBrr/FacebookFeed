@@ -453,10 +453,6 @@ h6 {
   display: inline-block;
 }
 
-.middle__part .card .card__content .content .more {
-  display: none;
-}
-
 .middle__part .card .card__content .galery {
   width: 100%;
   padding: 5px 0px;

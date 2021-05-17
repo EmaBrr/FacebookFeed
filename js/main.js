@@ -51,13 +51,16 @@ function getList(list,counter) {
   return HTML;
 }
 
-function timeDifference(previous) {
+//${timeDifference(list.laikas)}
+
+function timeDifference(time) {
   var msPerMinute = 60 * 1000;
   var msPerHour = msPerMinute * 60;
   var msPerDay = msPerHour * 24;
   var msPerMonth = msPerDay * 30;
   var msPerYear = msPerDay * 365;
-  var current = new Date().getTime() / 1000;
+    var previous = new Date(time);
+  var current = new Date().getTime();
 
   // return current;
 
@@ -77,6 +80,17 @@ function timeDifference(previous) {
     return Math.round(elapsed / msPerYear).toString() + " years ago";
   }
 }
+
+// function timeDifference(s) {
+//     var ms = s % 1000;
+//     s = (s - ms) / 1000;
+//     var secs = s % 60;
+//     s = (s - secs) / 60;
+//     var mins = s % 60;
+//     var hrs = (s - mins) / 60;
+  
+//     return hrs + ':' + mins + ':' + secs + '.' + ms;
+//   }
 
 function getGalery(arrayGalery) {
   if (arrayGalery === 0) {
