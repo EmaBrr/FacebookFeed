@@ -11,7 +11,7 @@ const feed = [{
         },
         laikas: 1621005739,
         pranesimas: {
-            tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi',
+            tekstas: 'Lorem ipsum dolor',
             spalva: '',
             paveiksliukai: [
                 'family1.jpg'

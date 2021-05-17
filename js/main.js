@@ -6,7 +6,7 @@ function getData(data) {
 
   if (Array.isArray(data)) {
     for (let i = 0; i < data.length; i++) {
-      HTML += getList(data[i]);
+      HTML += getList(data[i],i);
     }
 
     return (cardBody.innerHTML = HTML);
@@ -15,23 +15,19 @@ function getData(data) {
   }
 }
 
-function getList(list) {
+function getList(list,counter) {
   let HTML = `<div class="card">
                     <div class="card__header">
-                        <div class="img"><img src="./img/${
-                          list.autorius.avataras ?? "user_default.png"
-                        }" alt=""></div>
+                        <div class="img"><img src="./img/${list.autorius.avataras ?? "user_default.png"}" alt=""></div>
                         <div class="name__surname">
-                            <p>${list.autorius.vardas} ${
-    list.autorius.pavarde
-  }</p>
+                            <p>${list.autorius.vardas} ${list.autorius.pavarde}</p>
                             <p class="date">${timeDifference(list.laikas)}</p>
                         </div>
                         <div class="more"><p>...</p></div>
                     </div>
                     <div class="card__content">
-                        <div class="content">${showMore(list.pranesimas.tekstas)}</div>
-                         ${getGalery(list.pranesimas.paveiksliukai)}
+                        ${showMore(list.pranesimas.tekstas, counter)}
+                        ${getGalery(list.pranesimas.paveiksliukai)}
                     </div>
                     <div class="card__footer">
                         <div class="card__footer1">
@@ -99,8 +95,57 @@ function getGalery(arrayGalery) {
   }
 };
 
-function showMore(text){
-    console.log(text);
+function showMore(text,counter){
+
+    let output = '';
+
+    if (text.split(' ').length < 15) {
+        output = `<div class="content">${text}</div>`
+        return output;
+    }
+    else {
+        let textArray = text.split(' ');
+
+        let element1 = '';
+        let element2 = '';
+        let finalOutput = '';
+
+        for (let index = 0; index < 15; index++) {
+            element1 += textArray[index] + ' '; 
+        };
+
+        for (let index = 15; index < textArray.length; index++) {
+            element2 += textArray[index] + ' '; 
+        };
+
+        finalOutput = `<div class="content">
+                            <p>${element1}
+                                <span id="dots+${counter}">...</span>
+                                <span id="more+${counter}" style = "display: none">${element2}</span>
+                            </p>
+                            <button onclick="myFunction(+${counter})" id="myBtn+${counter}">Show more</button>
+                        </div>`;
+
+        return (finalOutput);
+    }
+
 }
 
+function myFunction(counter) {
+    var dots = document.getElementById(`dots+${counter}`);
+    var moreText = document.getElementById(`more+${counter}`);
+    var btnText = document.getElementById(`myBtn+${counter}`);
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Show more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Show less "; 
+      moreText.style.display = "inline";
+    }
+  };
+
 getData(feed);
+
