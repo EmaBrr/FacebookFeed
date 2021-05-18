@@ -463,6 +463,58 @@ h6 {
   width: 100%;
 }
 
+.middle__part .card .card__content .one__photo {
+  width: 100%;
+}
+
+.middle__part .card .card__content .two__photos {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "two_1 two_2";
+  align-items: center;
+  justify-content: center;
+}
+
+.middle__part .card .card__content .two__photos img {
+  display: inline-block;
+  padding: 0px 3px;
+}
+
+.middle__part .card .card__content .two__photos img:nth-child(1) {
+  grid-area: two_1;
+}
+
+.middle__part .card .card__content .two__photos img:nth-child(2) {
+  grid-area: two_2;
+}
+
+.middle__part .card .card__content .three__photos {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "three_1 three_1 three_1 three_1 three_2 three_2" "three_1 three_1 three_1 three_1 three_2 three_2" "three_1 three_1 three_1 three_1 three_3 three_3" "three_1 three_1 three_1 three_1 three_3 three_3";
+}
+
+.middle__part .card .card__content .three__photos img {
+  padding: 0px 3px;
+}
+
+.middle__part .card .card__content .three__photos img:nth-child(1) {
+  grid-area: three_1;
+}
+
+.middle__part .card .card__content .three__photos img:nth-child(2) {
+  grid-area: three_2;
+}
+
+.middle__part .card .card__content .three__photos img:nth-child(3) {
+  grid-area: three_3;
+}
+
 .middle__part .card .card__footer {
   padding: 20px;
   width: 100%;

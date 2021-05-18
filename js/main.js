@@ -62,8 +62,6 @@ function timeDifference(time) {
     var previous = new Date(time);
   var current = new Date().getTime();
 
-  // return current;
-
   var elapsed = current - previous;
 
   if (elapsed < msPerMinute) {
@@ -82,19 +80,92 @@ function timeDifference(time) {
 }
 
 function getGalery(arrayGalery) {
-  if (arrayGalery === 0) {
-    return "";
-  } else {
-      let output = ''
-    //   for (let index = 0; index < arrayGalery.length; index++) {
-    //       output +=  `<div class="galery"><img src="./img/${arrayGalery[index]}" alt=""></div>`
-    //   }
-    //   return output;
+  if (arrayGalery.length == 0) {
 
-    arrayGalery.forEach(element => {
-        output += `<div class="galery"><img src="./img/${element}" alt=""></div>`
-    });
-    return output;
+    return '';
+
+  } else if (arrayGalery.length == 1) {
+
+    let output = ''
+    let HTML = '';
+    for (let index = 0; index < arrayGalery.length; index++) {
+        output +=  `<img src="./img/${arrayGalery[index]}" alt="">`
+    }
+    HTML = `<div class="galery one__photo">
+            ${output}
+            </div>`
+
+    return HTML;
+  }  else if (arrayGalery.length == 2) {
+
+    let output = ''
+    let HTML = '';
+    for (let index = 0; index < arrayGalery.length; index++) {
+        output +=  `<img src="./img/${arrayGalery[index]}" alt="">`
+    }
+    HTML = `<div class="galery two__photos">
+                  ${output}
+                </div>`
+
+    return HTML;
+    
+  } else if (arrayGalery.length == 3) {
+
+    let output = ''
+    let HTML = '';
+    for (let index = 0; index < arrayGalery.length; index++) {
+        output +=  `<img src="./img/${arrayGalery[index]}" alt="">`
+    }
+
+    HTML = `<div class="galery three__photos">
+                ${output}
+            </div>`
+    return HTML;
+  }  else if (arrayGalery.length == 4) {
+
+    let output = ''
+    let HTML = '';
+    for (let index = 0; index < arrayGalery.length; index++) {
+        output +=  `<img src="./img/${arrayGalery[index]}" alt="">`
+    }
+
+    HTML = `<div class="galery four__photos">
+                ${output}
+            </div>`
+    return HTML;
+  }  else if (arrayGalery.length == 5) {
+
+    let output = ''
+    let HTML = '';
+    for (let index = 0; index < arrayGalery.length; index++) {
+        output +=  `<img src="./img/${arrayGalery[index]}" alt="">`
+    }
+
+    HTML = `<div class="galery five__photos">
+                ${output}
+            </div>`
+    return HTML;
+  }  else {
+
+    let output = ''
+    let HTML = '';
+    for (let index = 0; index < arrayGalery.length; index++) {
+        output +=  `<img src="./img/${arrayGalery[index]}" alt="">`
+    }
+
+    HTML = `<div class="galery more__photos">
+                ${output}
+            </div>`
+    return HTML;
+
+    // arrayGalery.forEach(element => {
+    //     let kiek = 5;
+
+    //     output += `<div class="galery">
+    //                   <img src="./img/${element}" alt="">
+    //                </div>`
+    // });
+    // return output;
   }
 };
 
